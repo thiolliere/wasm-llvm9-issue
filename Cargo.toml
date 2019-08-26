@@ -1,0 +1,15 @@
+[package]
+name = "wasm-llvm9-issue"
+version = "0.1.0"
+authors = ["thiolliere <gui.thiolliere@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "code"
+crate-type = [
+	"cdylib",
+	"rlib",
+]
+
+[profile.release]
+opt-level = "z"
